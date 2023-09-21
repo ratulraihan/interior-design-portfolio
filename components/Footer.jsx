@@ -49,7 +49,7 @@ export default function Footer() {
             {/* Copy Right */}
             <div className="py-10 bg-zinc-200">
                 <div className="container text-center text-gray-500 lg:justify-between lg:flex">
-                    <div className="pb-4">
+                    <div className="pb-4 lg:pb-0">
                         <p>&copy;2023 DIGIMAX.All rights reserved </p>
                     </div>
                     <div className="">

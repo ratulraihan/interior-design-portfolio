@@ -35,7 +35,7 @@ export default function CatalogueSection() {
     ]
 
     return (
-        <div className="grid grid-cols-4 divide-x divide-gray-300 ">
+        <div className="grid gap-8 divide-gray-300 lg:divide-x lg:gap-0 lg:grid-cols-4 md:grid-cols-2">
             {items.map((item) => (
                 <div key={item.id} className="relative overflow-hidden group">
                     <div>
@@ -51,7 +51,7 @@ export default function CatalogueSection() {
                         <a className="inline-flex items-center font-medium" href="">See Details <TbArrowNarrowRight className="ml-2 text-xl " /></a>
                     </div>
 
-                    <div className="absolute inset-0 flex flex-col items-center justify-end gap-32 pb-16 text-xl transition duration-300 ease-in-out group-hover:translate-y-full bg-zinc-100 ">
+                    <div className="inset-0 flex-col items-center justify-end hidden gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 md:flex md:absolute group-hover:translate-y-full md:border-b-0 bg-zinc-100">
                         <p className="tracking-wider -rotate-90 ">{item.catagory} </p>
                         <span className="">
                             {item.id}
